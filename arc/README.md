@@ -1,4 +1,4 @@
-## ARC Trace Datasets
+# ARC Trace Datasets
 
 These traces are released under the condition that the "ARC" paper must be
 cited:
@@ -12,6 +12,13 @@ cited:
 [Dharmendra S. Modha]: https://researcher.watson.ibm.com/researcher/view_person_subpage.php?id=4700
 [arc-paper]: https://www.usenix.org/event/fast03/tech/full_papers/megiddo/megiddo.pdf
 
+## Decompressing Trace Files
+
+These trace files are compressed using [Zstandard][zstd]. If you need to
+decompress them, see [this table][readme-decompress] for the command.
+
+[zstd]: https://facebook.github.io/zstd/
+[readme-decompress]: ../README.md#decompressing-trace-files
 ## File Format
 
 Every line in every file has four fields.
