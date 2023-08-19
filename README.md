@@ -3,10 +3,12 @@
 A collection of production cache traces.
 
 This repository contains trace files that can be used to evaluate caching
-algorithms. These traces are organized by directory, with each directory
-containing traces from a different source.
+algorithms.
 
 ## Trace Sources
+
+These traces are organized by directory, with each directory containing traces
+from a different source.
 
 ### ARC Traces
 
@@ -24,13 +26,11 @@ containing traces from a different source.
 See the [README](./arc/README.md) in the `arc` directory for more information
 including the conditions of use and redistribution.
 
-
 ## Usage
 
 ### Decompressing Trace Files
 
-Trace files may be compressed by us and you might need to decompress them before
-using. See the following table for the compression format and the command to
+Trace files may be compressed. See the following table for the command to
 decompress.
 
 | File Extension | File Type | Command to Decompress |
@@ -38,7 +38,6 @@ decompress.
 | `.zstd` | [Zstandard][zstd] |`zstd -d TRACE.zstd` |
 
 [zstd]: https://facebook.github.io/zstd/
-
 
 ## FAQ
 
@@ -50,15 +49,9 @@ addition to that, any fork by any other user consumes _the root repository's
 bandwidth_.
 
 This makes LFS unattractive for public repositories as LFS stops working if they
-become popular, unless the user pays per-GB prices. Its better then to store the
-files directly in git, even if a poor practice.
+become popular, unless the user pays per-GB prices. It is better then to store
+the files directly in git, even if a poor practice.
 
 - [About storage and bandwidth usage | GitHub Docs][gh-storage-usage]
 
 [gh-storage-usage]: https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-storage-and-bandwidth-usage
-
-
-## Copyright of Traces
-
-Copyrights are held by the authors of the paper. Please see the README files
-in each directory for more information.
