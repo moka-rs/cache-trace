@@ -37,6 +37,22 @@ decompress.
 |:--|:--|:--|
 | `.zstd` | [Zstandard][zstd] |`zstd -d TRACE.zstd` |
 
+#### Installing Zstandard
+
+Here are some command examples to install Zstandard.
+
+On Ubuntu:
+
+```console
+$ sudo apt install zstd
+```
+
+On macOS using Homebrew:
+
+```console
+$ brew install zstd
+```
+
 [zstd]: https://facebook.github.io/zstd/
 
 ## FAQ
