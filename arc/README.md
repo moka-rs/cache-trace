@@ -57,22 +57,22 @@ A quote from the paper:
 >> TABLE III. A summary of various traces used in this paper. Number of unique
 >> pages in a trace is termed its "footprint".
 >
-> The trace OLTP has been used in [^18], [^20], [^23]. It contains references to
-> a CODASYL database for a one-hour period. The traces P1&mdash;P14 were
-> collected from workstations running Windows NT by using Vtrace which captures
-> disk operations through the use of device filters. The traces were gathered
-> over several months, see [^29]. The page size for these traces was bytes. The
-> trace ConCat was obtained by concatenating the traces P1&mdash;P14. Similarly,
-> the trace Merge(P) was obtained by merging the traces P1&mdash;P14 using time
+> The trace OLTP has been used in [18], [20], [23]. It contains references to a
+> CODASYL database for a one-hour period. The traces P1&mdash;P14 were collected
+> from workstations running Windows NT by using Vtrace which captures disk
+> operations through the use of device filters. The traces were gathered over
+> several months, see [29]. The page size for these traces was bytes. The trace
+> ConCat was obtained by concatenating the traces P1&mdash;P14. Similarly, the
+> trace Merge(P) was obtained by merging the traces P1&mdash;P14 using time
 > stamps on each of the requests. The idea was to synthesize a trace that may
 > resemble a workload seen by a small storage controller. The trace DS1 was
 > taken off a database server running at a commercial site running an ERP
 > application on top of a commercial database. The trace is seven days long, see
-> [^30]. We captured a trace of the SPC1 like synthetic benchmark that contains
+> [30]. We captured a trace of the SPC1 like synthetic benchmark that contains
 > long sequential scans in addition to random accesses. For precise description
-> of the mathematical algorithms used to generate the benchmark, see [^31],
-> [^32], [^33]. The page size for this trace was KBytes. Finally, we consider
-> three traces S1, S2, and S3 that were disk read accesses initiated by a large
+> of the mathematical algorithms used to generate the benchmark, see [31], [32],
+> [33]. The page size for this trace was KBytes. Finally, we consider three
+> traces S1, S2, and S3 that were disk read accesses initiated by a large
 > commercial search engine in response to various web search requests. The trace
 > S1 was captured over a period of an hour, S2 was captured over roughly four
 > hours, and S3 was captured over roughly six hours. The page size for these
@@ -81,36 +81,29 @@ A quote from the paper:
 >
 > For all traces, we only considered the read requests.
 >
-> [^18] E. J. O’Neil, P. E. O'Neil, and G. Weikum, "The LRU-K page replacement
->       algorithm for database disk buffering," in Proc. ACM SIGMOD Conf., pp.
->       297&mdash;306, 1993.
->
-> [^20] T. Johnson and D. Shasha, "2Q: A low overhead high performance buffer
->       management replacement algorithm," in Proc. VLDB Conf., pp.
->       297&mdash;306, 1994.
->
-> [^23] D. Lee, J. Choi, J.-H. Kim, S. H. Noh, S. L. Min, Y. Cho, and C. S.
->       Kim, "LRFU: A spectrum of policies that subsumes the least recently
->       used and least frequently used policies," IEEE Trans. Computers, vol.
->       50, no. 12, pp. 1352&mdash;1360, 2001.
->
-> [^29] W. W. Hsu, A. J. Smith, and H. C. Young, "The automatic improvement of
->       locality in storage systems." Tech. Rep., Computer Science Division,
->       Univ. California, Berkeley, Nov. 2001.
->
-> [^30] W. W. Hsu, A. J. Smith, and H. C. Young, "Characteristics of I/O traffic
->       in personal computer and server workloads." Tech. Rep., Computer Science
->       Division, Univ. California, Berkeley, July 2001.
->
-> [^31] B. McNutt and S. A. Johnson, "A standard test of I/O cache," in Proc.
->       the Computer Measurements Group’s 2001 International Conference, 2001.
->
-> [^32] S. A. Johnson, B. McNutt, and R. Reich, "The making of a standard
->       benchmark for open system storage," J. Comput. Resource Management, no.
->       101, pp. 26&mdash;32, Winter 2001.
->
-> [^33] B. McNutt, "The Fractal Structure of Data Reference: Applications to
->       the Memory Hierarchy." Boston, MA: Kluwer Academic Publishers, 2000.
+> - [18] E. J. O’Neil, P. E. O'Neil, and G. Weikum, "The LRU-K page replacement
+>        algorithm for database disk buffering," in Proc. ACM SIGMOD Conf., pp.
+>        297&mdash;306, 1993.
+> - [20] T. Johnson and D. Shasha, "2Q: A low overhead high performance buffer
+>        management replacement algorithm," in Proc. VLDB Conf., pp.
+>        297&mdash;306, 1994.
+> - [23] D. Lee, J. Choi, J.-H. Kim, S. H. Noh, S. L. Min, Y. Cho, and C. S.
+>        Kim, "LRFU: A spectrum of policies that subsumes the least recently
+>        used and least frequently used policies," IEEE Trans. Computers, vol.
+>        50, no. 12, pp. 1352&mdash;1360, 2001.
+> - [29] W. W. Hsu, A. J. Smith, and H. C. Young, "The automatic improvement of
+>        locality in storage systems." Tech. Rep., Computer Science Division,
+>        Univ. California, Berkeley, Nov. 2001.
+> - [30] W. W. Hsu, A. J. Smith, and H. C. Young, "Characteristics of I/O traffic
+>        in personal computer and server workloads." Tech. Rep., Computer Science
+>        Division, Univ. California, Berkeley, July 2001.
+> - [31] B. McNutt and S. A. Johnson, "A standard test of I/O cache," in Proc.
+>        the Computer Measurements Group’s 2001 International Conference, 2001.
+> - [32] S. A. Johnson, B. McNutt, and R. Reich, "The making of a standard
+>        benchmark for open system storage," J. Comput. Resource Management, no.
+>        101, pp. 26&mdash;32, Winter 2001.
+> - [33] B. McNutt, "The Fractal Structure of Data Reference: Applications to
+>        the Memory Hierarchy." Boston, MA: Kluwer Academic Publishers, 2000.
 
 ## Decompressing Trace Files
 
